@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Visual gallery showcasing India's cultural heritage - festivals, monuments, arts, and traditions.">
+    <title>Gallery | Indian Cultural Heritage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="tricolor-stripe"></div>
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-flower1" style="color: var(--saffron); font-size: 2rem;"></i>
+                <span>Incredible India</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="festivals.html">Festivals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="monuments.html">Monuments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="arts.html">Arts</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <img src="images/indian-architecture-hero.jpg" alt="Indian architecture" class="page-header-bg">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Gallery</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Gallery</li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Visual Journey Through India</h2>
+                    <p>Explore stunning images capturing India's culture, heritage, and traditions.</p>
+                </div>
+
+                <!-- Gallery Carousel -->
+                <div id="galleryCarousel" class="carousel slide mb-5 rounded overflow-hidden shadow"
+                    data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner" style="max-height: 500px;">
+                        <div class="carousel-item active">
+                            <img src="images/taj-mahal-carousel.jpg" class="d-block w-100"
+                                style="object-fit: cover; height: 100%;" alt="Taj Mahal at sunset">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Architectural Wonders</h5>
+                                <p>Timeless beauty of Indian monuments</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/holi-home.webp" class="d-block w-100"
+                                style="object-fit: cover; height: 100%;" alt="Holi festival colors">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Vibrant Festivals</h5>
+                                <p>Celebrating life with colors and joy</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/indian-architecture-hero.jpg" class="d-block w-100"
+                                style="object-fit: cover; height: 100%;" alt="Indian cultural architecture">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Rich Heritage</h5>
+                                <p>A legacy spanning five millennia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="gallery-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="festivals">Festivals</button>
+                    <button class="filter-btn" data-filter="monuments">Monuments</button>
+                    <button class="filter-btn" data-filter="arts">Arts</button>
+                    <button class="filter-btn" data-filter="nature">Nature</button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid">
+                    <div class="gallery-item animate-on-scroll" data-category="monuments">
+                        <img src="images/taj-mahal-card.jpg" alt="Taj Mahal">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Taj Mahal</h5>
+                                <p>Agra, Uttar Pradesh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="festivals">
+                        <img src="images/holi-home.webp" alt="Holi Festival">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Holi Festival</h5>
+                                <p>Festival of Colors</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="arts">
+                        <img src="images/bharatanatyam.jpg" alt="Bharatanatyam">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Bharatanatyam</h5>
+                                <p>Classical Dance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="monuments">
+                        <img src="images/red-fort.jpg" alt="Red Fort">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Red Fort</h5>
+                                <p>Delhi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="festivals">
+                        <img src="images/diwali-home.avif" alt="Diwali">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Diwali</h5>
+                                <p>Festival of Lights</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="nature">
+                        <img src="images/kerala-backwaters.jpg" alt="Kerala Backwaters">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Kerala Backwaters</h5>
+                                <p>God's Own Country</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="monuments">
+                        <img src="images/hawa-mahal.jpeg" alt="Hawa Mahal">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Hawa Mahal</h5>
+                                <p>Jaipur, Rajasthan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="arts">
+                        <img src="images/kathakali.jpg" alt="Kathakali">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Kathakali</h5>
+                                <p>Kerala Dance Drama</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="nature">
+                        <img src="images/thar-desert.jpg" alt="Rajasthan Desert">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Thar Desert</h5>
+                                <p>Rajasthan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="monuments">
+                        <img src="images/meenakshi-temple.jpg" alt="South Indian Temple">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Meenakshi Temple</h5>
+                                <p>Madurai</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="festivals">
+                        <img src="images/Ganesh-Chaturthi-festival.jpg" alt="Ganesh Chaturthi">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Ganesh Chaturthi</h5>
+                                <p>Maharashtra</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="nature">
+                        <img src="images/himalayan-foothills.jpg" alt="Indian Landscape">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Himalayan Foothills</h5>
+                                <p>North India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- New Festivals -->
+                    <div class="gallery-item animate-on-scroll" data-category="festivals">
+                        <img src="images/dusheraa.jpeg" alt="Dussehra Celebration">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Dussehra</h5>
+                                <p>Victory of Good over Evil</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="festivals">
+                        <img src="images/onam.jpeg" alt="Onam Pookalam">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Onam</h5>
+                                <p>Kerala's Harvest Festival</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="festivals">
+                        <img src="images/pongal.jpeg" alt="Pongal Celebration">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Pongal</h5>
+                                <p>Harvest Festival of Tamil Nadu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="festivals">
+                        <img src="images/Durga-Puja-home.jpg" alt="Durga Puja">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Durga Puja</h5>
+                                <p>West Bengal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="festivals">
+                        <img src="images/navratri-garba.jpg" alt="Navratri Garba">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Navratri</h5>
+                                <p>Dance of Devotion</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="festivals">
+                        <img src="images/christmas.jpeg" alt="Christmas Celebration">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Christmas</h5>
+                                <p>Festival of Joy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Monuments -->
+                    <div class="gallery-item animate-on-scroll" data-category="monuments">
+                        <img src="images/qutub-minar.jpg" alt="Qutub Minar">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Qutub Minar</h5>
+                                <p>New Delhi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="monuments">
+                        <img src="images/gateway-of-india.jpg" alt="Gateway of India">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Gateway of India</h5>
+                                <p>Mumbai</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="monuments">
+                        <img src="images/hampi-images.jpeg" alt="Hampi Ruins">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Hampi</h5>
+                                <p>Vijayanagara Empire</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="monuments">
+                        <img src="images/caves.jpeg" alt="Ajanta and Ellora Caves">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Ajanta & Ellora</h5>
+                                <p>Ancient Rock-cut Caves</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="monuments">
+                        <img src="images/konark-sun-temple.jpg" alt="Konark Sun Temple">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Konark Sun Temple</h5>
+                                <p>Odisha</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="monuments">
+                        <img src="images/khajuraho-temples.jpg" alt="Khajuraho Temples">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Khajuraho</h5>
+                                <p>Madhya Pradesh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="monuments">
+                        <img src="images/mysore-palace.jpg" alt="Mysore Palace">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Mysore Palace</h5>
+                                <p>Karnataka</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Arts -->
+                    <div class="gallery-item animate-on-scroll" data-category="arts">
+                        <img src="images/kathak.jpg" alt="Kathak Dance">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Kathak</h5>
+                                <p>Classical Dance of North India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="arts">
+                        <img src="images/odissi.jpg" alt="Odissi Dance">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Odissi</h5>
+                                <p>Classical Dance of Odisha</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="arts">
+                        <img src="images/manipuri-arts.jpg" alt="Manipuri Dance">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Manipuri</h5>
+                                <p>Classical Dance of Manipur</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll" data-category="arts">
+                        <img src="images/kuchipudi.jpg" alt="Kuchipudi Dance">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h5>Kuchipudi</h5>
+                                <p>Classical Dance of Andhra Pradesh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 style="color: var(--white-pure);"><i class="bi bi-flower1 me-2"
+                            style="color: var(--saffron);"></i>Incredible India</h4>
+                    <p style="color: rgba(255,255,255,0.7);">Discover India's cultural heritage.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="monuments.html">Monuments</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-envelope me-2"></i>culture@nic.in</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2024 Government of India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="tricolor-stripe"></div>
+
+    <!-- Image Viewing Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-white" id="galleryModalLabel"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-0">
+                    <img src="" class="img-fluid rounded shadow-lg" id="galleryModalImage" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

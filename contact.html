@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact the Ministry of Culture, Government of India for cultural heritage inquiries.">
+    <title>Contact Us | Indian Cultural Heritage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="tricolor-stripe"></div>
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-flower1" style="color: var(--saffron); font-size: 2rem;"></i>
+                <span>Incredible India</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="festivals.html">Festivals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="monuments.html">Monuments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="arts.html">Arts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <img src="images/taj-mahal-hero.jpg" alt="Indian architecture"
+            class="page-header-bg">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Contact Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Contact</li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="section-padding">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Contact Form -->
+                    <div class="col-lg-7">
+                        <div class="contact-card animate-on-scroll">
+                            <h3><i class="bi bi-envelope me-2" style="color: var(--saffron);"></i>Send us a Message</h3>
+                            <form id="contactForm" class="contact-form">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Full Name *</label>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Your name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="your@email.com" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="subject" class="form-label">Subject *</label>
+                                        <input type="text" class="form-control" id="subject" name="subject"
+                                            placeholder="Message subject" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message *</label>
+                                        <textarea class="form-control" id="message" name="message" rows="5"
+                                            placeholder="Your message..." required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn-primary-custom">
+                                            <i class="bi bi-send"></i> Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-lg-5">
+                        <div class="contact-card animate-on-scroll">
+                            <h3><i class="bi bi-info-circle me-2" style="color: var(--saffron);"></i>Contact Information
+                            </h3>
+
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="bi bi-geo-alt"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h5>Address</h5>
+                                    <p>Ministry of Culture<br>
+                                        Government of India<br>
+                                        Shastri Bhawan, New Delhi - 110001</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="bi bi-telephone"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h5>Phone</h5>
+                                    <p>+91-11-23384134<br>+91-11-23384248</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="bi bi-envelope"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h5>Email</h5>
+                                    <p>culture@nic.in<br>webmanager-culture@gov.in</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="bi bi-clock"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h5>Office Hours</h5>
+                                    <p>Monday - Friday: 9:30 AM - 6:00 PM<br>
+                                        Saturday - Sunday: Closed</p>
+                                </div>
+                            </div>
+
+                            <h5 class="mt-4 mb-3">Follow Us</h5>
+                            <div class="social-links" style="gap: 10px;">
+                                <a href="#" class="social-link" aria-label="Facebook"
+                                    style="background: var(--saffron);"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="social-link" aria-label="Twitter"
+                                    style="background: var(--saffron);"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" class="social-link" aria-label="Instagram"
+                                    style="background: var(--saffron);"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="social-link" aria-label="YouTube"
+                                    style="background: var(--saffron);"><i class="bi bi-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="section-padding bg-light-cream">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Find Us</h2>
+                    <p>Visit our office in New Delhi</p>
+                </div>
+                <div class="ratio ratio-21x9 rounded overflow-hidden shadow-lg animate-on-scroll">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9999234127096!2d77.20970007550057!3d28.62099538534291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37ab3d5b9d%3A0x3c7b6f00b92c0e7f!2sShastri%20Bhawan!5e0!3m2!1sen!2sin!4v1703839200000!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Ministry of Culture location on Google Maps">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 style="color: var(--white-pure);"><i class="bi bi-flower1 me-2"
+                            style="color: var(--saffron);"></i>Incredible India</h4>
+                    <p style="color: rgba(255,255,255,0.7);">Discover India's cultural heritage.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="festivals.html">Festivals</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Explore</h5>
+                    <ul class="footer-links">
+                        <li><a href="monuments.html">Monuments</a></li>
+                        <li><a href="arts.html">Arts</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2024 Government of India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="tricolor-stripe"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
