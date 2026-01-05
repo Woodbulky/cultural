@@ -810,6 +810,81 @@ img {
     border-radius: var(--radius-xl);
 }
 
+/* ==================== TIMELINE SECTION ==================== */
+.timeline-section {
+    padding: var(--section-padding);
+}
+
+/* Timeline container - centered with fixed max-width */
+.timeline-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Timeline wrapper for cards */
+.timeline-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Individual timeline items */
+.timeline-item {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Timeline cards - ensure consistent width and alignment */
+.timeline-item .feature-card {
+    width: 100%;
+    text-align: left;
+}
+
+/* Timeline card body - consistent padding */
+.timeline-item .feature-card-body {
+    padding: 24px 28px;
+}
+
+/* Timeline date tag - consistent alignment */
+.timeline-item .festival-tag {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 12px;
+    top: auto;
+    right: auto;
+}
+
+/* Timeline title alignment */
+.timeline-item h4 {
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+/* Timeline description */
+.timeline-item p {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 767.98px) {
+    .timeline-container {
+        padding: 0 16px;
+    }
+
+    .timeline-item .feature-card-body {
+        padding: 20px;
+    }
+
+    .timeline-item {
+        margin-bottom: 20px;
+    }
+}
+
 /* ==================== MONUMENT CARDS ==================== */
 .monument-card {
     background: var(--white-pure);
